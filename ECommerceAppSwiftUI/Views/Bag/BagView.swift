@@ -218,14 +218,14 @@ struct ItemCellTypeThree: View {
                         Text("Color:")
                             .font(.custom(Constants.AppFont.regularFont, size: 13))
                             .foregroundColor(.gray)
-                        Text(cloth.color)
+//                        Text(cloth.color)
                             .font(.custom(Constants.AppFont.regularFont, size: 13))
                             .foregroundColor(Constants.AppColor.secondaryBlack)
                         
                         Text("Size:")
                             .font(.custom(Constants.AppFont.regularFont, size: 13))
                             .foregroundColor(.gray)
-                        Text(cloth.size)
+//                        Text(cloth.size)
                             .font(.custom(Constants.AppFont.regularFont, size: 13))
                             .foregroundColor(Constants.AppColor.secondaryBlack)
                     }

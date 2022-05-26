@@ -126,18 +126,18 @@ struct ItemDetailsView: View {
                 .padding(.top, 10)
             
             HStack {
-                ForEach(self.arrSize, id: \.self) { size in
-                    Button(action: {
-                        self.size = size
-                    }) {
-                        Text(size)
-                            .font(.custom(Constants.AppFont.semiBoldFont, size: 13))
-                            .foregroundColor(self.size == size ? Constants.AppColor.secondaryRed : Constants.AppColor.secondaryBlack)
-                            .frame(width: 40, height: 30)
-                    }
-                    .overlay(RoundedRectangle(cornerRadius: 5)
-                    .stroke(self.size == size ? Constants.AppColor.secondaryRed : Constants.AppColor.secondaryBlack, lineWidth: self.size == size ? 1.0 : 0.3))
-                }
+//                ForEach(self.arrSize, id: \.self) { size in
+//                    Button(action: {
+//                        self.size = size
+//                    }) {
+//                        Text(size)
+//                            .font(.custom(Constants.AppFont.semiBoldFont, size: 13))
+//                            .foregroundColor(self.size == size ? Constants.AppColor.secondaryRed : Constants.AppColor.secondaryBlack)
+//                            .frame(width: 40, height: 30)
+//                    }
+//                    .overlay(RoundedRectangle(cornerRadius: 5)
+//                    .stroke(self.size == size ? Constants.AppColor.secondaryRed : Constants.AppColor.secondaryBlack, lineWidth: self.size == size ? 1.0 : 0.3))
+//                }
                 Spacer()
             }
             .padding(.top, 15)
@@ -156,17 +156,17 @@ struct ItemDetailsView: View {
                 .padding(.top, 10)
             
             HStack {
-                ForEach(self.arrColor, id: \.self) { color in
-                    Button(action: {
-                        self.color = color
-                    }) {
-                        Circle()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(Color.init(hex: color))
-                    }
-                    .overlay(RoundedRectangle(cornerRadius: 15)
-                    .stroke(Constants.AppColor.secondaryRed, lineWidth: self.color == color ? 1.0 : 0))
-                }
+//                ForEach(self.arrColor, id: \.self) { color in
+//                    Button(action: {
+//                        self.color = color
+//                    }) {
+//                        Circle()
+//                            .frame(width: 30, height: 30)
+//                            .foregroundColor(Color.init(hex: color))
+//                    }
+//                    .overlay(RoundedRectangle(cornerRadius: 15)
+//                    .stroke(Constants.AppColor.secondaryRed, lineWidth: self.color == color ? 1.0 : 0))
+//                }
                 Spacer()
             }
             .padding(.bottom, 10)
